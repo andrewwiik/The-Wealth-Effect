@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Wealth Effect | Class view</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+  <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+  <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .popover {
+      z-index: 9999 !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span>
+                            <img alt="image" class="img-circle" src="img/william-avatar.jpg">
+                             </span>
+                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">William Anderson</strong>
+                             </span> <span class="text-muted text-xs block">Teacher<b class="caret"></b></span> </span>
+              </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+            <div class="logo-element">
+              WA
+            </div>
+          </li>
+          <li>
+            <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+          </li>
+          <li class="active">
+            <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Classes</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="class.html">Period 5</a></li>
+              <li class="active"><a href="class1.html">Period 7</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    </div>
+    <div id="page-wrapper" class="gray-bg" style="min-height: 372px;">
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2>Class Details</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <strong>Class Details</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated fadeInUp">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="m-b-md">
+                                        <a href="#" class="btn btn-white btn-xs pull-right">Edit class</a>
+                                        <h2>Financial Literacy</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <dl class="dl-horizontal">
+                                        <dt>School:</dt> <dd><a href="#" class="text-navy"> Sussex County Technical School</a> </dd>
+                                        <dt>Created by:</dt> <dd>William Anderson</dd>
+                                        <dt>Period:</dt> <dd>  7 </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-7" id="cluster_info">
+                                    <dl class="dl-horizontal" >
+
+                                        <dt>Last Updated:</dt> <dd>18.12.2015 12:15:57</dd>
+                                        <dt>Created:</dt> <dd>  18.12.2015 5:36:57 </dd>
+                                        <dt>Students:</dt>
+                                        <dd class="project-people">
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a1.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a2.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a4.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a5.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a3.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a6.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a8.jpg"></a>
+                                          <a href="#"><img alt="image" class="img-circle" src="img/a7.jpg"></a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <dl class="dl-horizontal">
+                                        <dt>Completed:</dt>
+                                        <dd>
+                                            <div class="progress progress-striped active m-b-sm">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row m-t-sm">
+                                <div class="col-lg-12">
+                                <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab-2" data-toggle="tab">Lastest Payments</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+
+                                <div class="tab-content">
+                                <div class="tab-pane active" id="tab-2">
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Status</th>
+                                            <th>Name</th>
+                                            <th>Company</th>
+                                            <th>Time</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary"><i class="fa fa-check"></i> Paid</span>
+                                            </td>
+                                            <td>
+                                               Andrew Wiik
+                                            </td>
+                                            <td>
+                                               Shoprite
+                                            </td>
+                                            <td>
+                                                12.12.2015 10:16:36
+                                            </td>
+                                            <td>
+                                            <p class="small">
+                                                Andrew Wiik paid <strong>$256.00</strong> for groceries this month. Andrew's new balance in his checking account currently is $1,200.56 .
+                                            </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-warning"><i class="fa fa-exclamation-triangle"></i> Pending</span>
+                                            </td>
+                                            <td>
+                                                Scott Caratozzolo
+                                            </td>
+                                            <td>
+                                                Verizon
+                                            </td>
+                                            <td>
+                                                11.12.2015 15:23:57
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Scott Cartozzolo's payment in the amount <strong>$75.46</strong> for his celluar service bill this month is pending. Scott's new balance in his checking account once the transaction is complete will be $945.57 .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-danger"><i class="fa fa-times"></i> Late</span>
+                                            </td>
+                                            <td>
+                                                Jake Hull
+                                            </td>
+                                            <td>
+                                                Service Electric
+                                            </td>
+                                            <td>
+                                                11.12.2015 8:34:13
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Jake Hull paid his Electric Utility bill <strong>3 days late</strong> in the amount of <strong>$128.00</strong> including late fees. Jake's new balance in his checking account currently is <strong>$348.00</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary"><i class="fa fa-check"></i> Paid</span>
+                                            </td>
+                                            <td>
+                                                Toni Stacker
+                                            </td>
+                                            <td>
+                                                United Water
+                                            </td>
+                                            <td>
+                                                10.12.2015 13:45:46
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Toni Stacker paid <strong>$73.00</strong> for water this month. Toni's new balance in her checking account currently is <strong>$845.73</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-warning"><i class="fa fa-exclamation-triangle"></i> Pending</span>
+                                            </td>
+                                            <td>
+                                                Connor Jenkins
+                                            </td>
+                                            <td>
+                                                Alteva
+                                            </td>
+                                            <td>
+                                                09.12.2015 8:11:26
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Connor Jenkins' payment in  the amount of <strong>$40.00</strong> for his broadband internet is pending. Connor's new balance in his checking account once the transaction is complete will be <strong>$583.46</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary"><i class="fa fa-check"></i> Paid</span>
+                                            </td>
+                                            <td>
+                                                Zoe Card
+                                            </td>
+                                            <td>
+                                                AT&amp;T
+                                            </td>
+                                            <td>
+                                                08.12.2015 16:11:51
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Zoe Card paid <strong>$63.00</strong> for her Celluar Service bill this month. Zoe's new balance in her checking account currently is <strong>$1,500.26</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-danger"><i class="fa fa-times"></i> Late</span>
+                                            </td>
+                                            <td>
+                                                Scott Caratozzolo
+                                            </td>
+                                            <td>
+                                                Price Chopper
+                                            </td>
+                                            <td>
+                                                08.12.2015 11:36:32
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Scott Caratozzolo paid his groceries bill <strong>5 days late</strong> in the amount of <strong>$238.00</strong>. Scott's new balance in his checking account currently is <strong>$1,184.39</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary"><i class="fa fa-check"></i> Paid</span>
+                                            </td>
+                                            <td>
+                                                Zoe Card
+                                            </td>
+                                            <td>
+                                                Coscos
+                                            </td>
+                                            <td>
+                                                06.12.2015 5:11:46
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                   Zoe Card paid <strong>$167.43</strong> for groceries this month. Zoe's new balance in her checking account currently is <strong>$1,563.26</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary"><i class="fa fa-check"></i> Paid</span>
+                                            </td>
+                                            <td>
+                                                Andrew Wiik
+                                            </td>
+                                            <td>
+                                                Verizon
+                                            </td>
+                                            <td>
+                                                05.12.2015 17:26:53
+                                            </td>
+                                            <td>
+                                                <p class="small">
+                                                    Andrew Wiik paid <strong>$79.00</strong> for his Celluar Service bill this month. Andrew's new balance in his checking account currently is <strong>$1,456.56</strong> .
+                                                </p>
+                                            </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                </div>
+
+                                </div>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+              andrew.wiik@vtsd.com
+            </div>
+            <div>
+                <strong>Copyright</strong> Andrew Wiik &copy; 2015-2016
+            </div>
+        </div>
+
+        </div>
+        </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+
+
+
+});
+    </script>
+
+</body>
+
+</html>
